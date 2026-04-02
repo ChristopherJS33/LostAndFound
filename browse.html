@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browse Items | Lost and Found</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand">
+          <div class="brand-mark">LF</div>
+          <div class="brand-text">
+            <h2>Browse Items</h2>
+            <p>Search through current reports</p>
+          </div>
+        </a>
+
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="report-lost.html">Report Lost</a>
+          <a href="report-found.html">Report Found</a>
+          <a href="dashboard.html" class="nav-cta">Dashboard</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <div class="container">
+        <section class="filter-panel">
+          <h2>Search and filter reports</h2>
+          <p class="section-text" style="margin-bottom: 20px">
+            Search by keyword and narrow the results using category or status.
+          </p>
+
+          <form id="searchForm" class="filter-grid">
+            <div>
+              <label for="searchKeyword">Keyword</label>
+              <input
+                type="text"
+                id="searchKeyword"
+                name="searchKeyword"
+                placeholder="wallet, keys, phone..."
+              />
+            </div>
+
+            <div>
+              <label for="searchCategory">Category</label>
+              <select id="searchCategory" name="searchCategory">
+                <option value="">All Categories</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Accessories">Accessories</option>
+                <option value="ID">ID</option>
+                <option value="Clothing">Clothing</option>
+                <option value="Books">Books</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="searchStatus">Status</label>
+              <select id="searchStatus" name="searchStatus">
+                <option value="">All Statuses</option>
+                <option value="lost">Lost</option>
+                <option value="found">Found</option>
+                <option value="claimed">Claimed</option>
+              </select>
+            </div>
+
+            <div class="filter-actions">
+              <button type="submit" class="btn-primary">Search</button>
+              <button type="button" id="clearFiltersBtn" class="btn-secondary">
+                Clear
+              </button>
+            </div>
+          </form>
+        </section>
+
+        <section class="section-top-space">
+          <div class="section-heading-row">
+            <div>
+              <h2 class="section-title" style="margin-bottom: 6px">
+                Available reports
+              </h2>
+              <p class="subtle-text">
+                Browse all current lost and found submissions.
+              </p>
+            </div>
+            <p id="resultsCount" class="subtle-text"></p>
+          </div>
+
+          <div id="itemsContainer" class="item-grid"></div>
+        </section>
+      </div>
+    </main>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

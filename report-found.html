@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Report Found Item</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand">
+          <div class="brand-mark">LF</div>
+          <div class="brand-text">
+            <h2>Report Found Item</h2>
+            <p>Help return an item to its owner</p>
+          </div>
+        </a>
+
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="browse.html">Browse</a>
+          <a href="dashboard.html" class="nav-cta">Dashboard</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <div class="container">
+        <div class="form-shell">
+          <section class="form-section">
+            <h1>Found item report</h1>
+            <p class="form-subtitle">
+              Enter the details of the item you found so the rightful owner can
+              identify it.
+            </p>
+
+            <p class="message" id="formMessage"></p>
+
+            <form id="foundItemForm">
+              <div class="form-grid">
+                <div>
+                  <label for="title">Item name</label>
+                  <input type="text" id="title" name="title" required />
+                  <p class="helper-text">
+                    Example: Blue notebook, keys with red lanyard, AirPods case
+                  </p>
+                </div>
+
+                <div>
+                  <label for="category">Category</label>
+                  <select id="category" name="category" required>
+                    <option value="">Select Category</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Accessories">Accessories</option>
+                    <option value="ID">ID</option>
+                    <option value="Clothing">Clothing</option>
+                    <option value="Books">Books</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group-full">
+                  <label for="description">Description</label>
+                  <textarea
+                    id="description"
+                    name="description"
+                    rows="6"
+                    required
+                  ></textarea>
+                  <p class="helper-text">
+                    Describe what it looks like without revealing every
+                    identifying detail.
+                  </p>
+                </div>
+
+                <div>
+                  <label for="location">Found location</label>
+                  <input type="text" id="location" name="location" required />
+                </div>
+
+                <div>
+                  <label for="date_found">Date found</label>
+                  <input
+                    type="date"
+                    id="date_found"
+                    name="date_found"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <a href="browse.html" class="btn-secondary">Cancel</a>
+                <button type="submit" class="btn-primary">
+                  Submit Found Report
+                </button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

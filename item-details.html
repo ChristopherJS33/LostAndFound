@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Item Details | Lost and Found</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand">
+          <div class="brand-mark">LF</div>
+          <div class="brand-text">
+            <h2>Item Details</h2>
+            <p>Review and claim an item</p>
+          </div>
+        </a>
+
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="browse.html">Browse</a>
+          <a href="dashboard.html" class="nav-cta">Dashboard</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <div class="container">
+        <div id="itemDetails"></div>
+
+        <section class="form-section claim-section">
+          <h2>Submit a claim</h2>
+          <p class="form-subtitle">
+            Explain why you believe this item belongs to you.
+          </p>
+
+          <p class="message" id="claimMessage"></p>
+
+          <form id="claimForm">
+            <div class="form-grid">
+              <div>
+                <label for="claimName">Full name</label>
+                <input type="text" id="claimName" name="claimName" required />
+              </div>
+
+              <div>
+                <label for="claimEmail">Email</label>
+                <input
+                  type="email"
+                  id="claimEmail"
+                  name="claimEmail"
+                  required
+                />
+              </div>
+
+              <div class="form-group-full">
+                <label for="claimReason"
+                  >Why do you believe this is your item?</label
+                >
+                <textarea
+                  id="claimReason"
+                  name="claimReason"
+                  rows="6"
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn-primary">Submit Claim</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

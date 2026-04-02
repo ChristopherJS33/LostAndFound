@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel | Lost and Found</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div>
+          <h1>Admin Dashboard</h1>
+          <p class="header-subtitle">
+            Review pending claims and monitor submissions
+          </p>
+        </div>
+
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="browse.html">Browse</a>
+          <a href="dashboard.html">Dashboard</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <div class="container">
+        <section class="admin-stats">
+          <article class="info-card">
+            <h3>Total Reports</h3>
+            <p id="totalReports">0</p>
+          </article>
+
+          <article class="info-card">
+            <h3>Pending Claims</h3>
+            <p id="pendingClaimsCount">0</p>
+          </article>
+
+          <article class="info-card">
+            <h3>Resolved Items</h3>
+            <p id="resolvedItemsCount">0</p>
+          </article>
+        </section>
+
+        <section class="section-top-space">
+          <h2>Pending Claims</h2>
+          <div id="adminClaimsContainer" class="item-grid"></div>
+        </section>
+      </div>
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
