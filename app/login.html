@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Lost and Found</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main class="auth-page">
+      <div class="auth-layout">
+        <section class="auth-side">
+          <div class="hero-kicker">Welcome back</div>
+          <h2>Access your dashboard and manage your reports.</h2>
+          <p>
+            Log in to view your submitted items, keep track of activity, and
+            continue using the lost and found platform.
+          </p>
+
+          <div class="auth-points">
+            <div class="auth-point">
+              View all your reported lost and found items
+            </div>
+            <div class="auth-point">Track activity in one place</div>
+            <div class="auth-point">
+              Use a cleaner, easy-to-read layout built for laptop screens
+            </div>
+          </div>
+        </section>
+
+        <section class="auth-card">
+          <h1>Login</h1>
+          <p class="form-subtitle">
+            Enter your email and password to continue.
+          </p>
+          <p class="message" id="formMessage"></p>
+
+          <form id="loginForm">
+            <div class="form-grid">
+              <div class="form-group-full">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group-full">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required />
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn-primary">Login</button>
+            </div>
+          </form>
+
+          <p class="helper-text" style="margin-top: 16px">
+            Don’t have an account?
+            <a
+              href="register.html"
+              style="color: var(--blue-dark); font-weight: 700"
+              >Create one here</a
+            >
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Report Lost Item</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand">
+          <div class="brand-mark">LF</div>
+          <div class="brand-text">
+            <h2>Report Lost Item</h2>
+            <p>Tell us what went missing</p>
+          </div>
+        </a>
+
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="browse.html">Browse</a>
+          <a href="dashboard.html" class="nav-cta">Dashboard</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <div class="container">
+        <div class="form-shell">
+          <section class="form-section">
+            <h1>Lost item report</h1>
+            <p class="form-subtitle">
+              Fill out the form below with clear details to improve the chance
+              of finding your item.
+            </p>
+
+            <p class="message" id="formMessage"></p>
+
+            <form id="lostItemForm">
+              <div class="form-grid">
+                <div>
+                  <label for="title">Item name</label>
+                  <input type="text" id="title" name="title" required />
+                  <p class="helper-text">
+                    Example: Black wallet, silver MacBook, student ID
+                  </p>
+                </div>
+
+                <div>
+                  <label for="category">Category</label>
+                  <select id="category" name="category" required>
+                    <option value="">Select Category</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Accessories">Accessories</option>
+                    <option value="ID">ID</option>
+                    <option value="Clothing">Clothing</option>
+                    <option value="Books">Books</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group-full">
+                  <label for="description">Description</label>
+                  <textarea
+                    id="description"
+                    name="description"
+                    rows="6"
+                    required
+                  ></textarea>
+                  <p class="helper-text">
+                    Add color, size, brand, marks, stickers, or anything
+                    recognizable.
+                  </p>
+                </div>
+
+                <div>
+                  <label for="location">Last seen location</label>
+                  <input type="text" id="location" name="location" required />
+                </div>
+
+                <div>
+                  <label for="date_lost">Date lost</label>
+                  <input type="date" id="date_lost" name="date_lost" required />
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <a href="browse.html" class="btn-secondary">Cancel</a>
+                <button type="submit" class="btn-primary">
+                  Submit Lost Report
+                </button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | Lost and Found</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main class="auth-page">
+      <div class="auth-layout">
+        <section class="auth-side">
+          <div class="hero-kicker">Create your account</div>
+          <h2>Start reporting and tracking items in one place.</h2>
+          <p>
+            Register to use the platform, submit reports, and get a more
+            organized experience when managing lost and found activity.
+          </p>
+
+          <div class="auth-points">
+            <div class="auth-point">Report lost items quickly</div>
+            <div class="auth-point">Post found items with clear details</div>
+            <div class="auth-point">Access your dashboard anytime</div>
+          </div>
+        </section>
+
+        <section class="auth-card">
+          <h1>Create Account</h1>
+          <p class="form-subtitle">Fill in your information to get started.</p>
+          <p class="message" id="formMessage"></p>
+
+          <form id="registerForm">
+            <div class="form-grid">
+              <div class="form-group-full">
+                <label for="full_name">Full name</label>
+                <input type="text" id="full_name" name="full_name" required />
+              </div>
+
+              <div class="form-group-full">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group-full">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required />
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn-primary">Create Account</button>
+            </div>
+          </form>
+
+          <p class="helper-text" style="margin-top: 16px">
+            Already have an account?
+            <a
+              href="login.html"
+              style="color: var(--blue-dark); font-weight: 700"
+              >Login here</a
+            >
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

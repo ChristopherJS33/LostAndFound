@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Lost and Found</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div>
+          <h1 id="welcomeUser">Welcome</h1>
+          <p class="header-subtitle">
+            Manage your activity and submitted reports
+          </p>
+        </div>
+
+        <nav class="main-nav">
+          <a href="browse.html">Browse</a>
+          <a href="report-lost.html">Report Lost</a>
+          <a href="report-found.html">Report Found</a>
+          <a href="admin.html">Admin</a>
+          <button type="button" class="logout-btn btn-secondary nav-button">
+            Logout
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <div class="container">
+        <p class="message" id="dashboardMessage"></p>
+
+        <section>
+          <h2>My Submitted Items</h2>
+          <div id="myItemsContainer" class="item-grid"></div>
+        </section>
+      </div>
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
